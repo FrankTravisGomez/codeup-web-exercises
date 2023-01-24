@@ -1,0 +1,12 @@
+console.log("Hello from external JavaScript!");
+    alert('Welcome to my Website!');
+    var userAnswer= prompt("What is your favorite color?");
+    alert("No way!" + userAnswer + "Is my favorite color too!");
+    alert(" You wanted to rent, TheLittleMermaid, BrotherBear, and Hercules");
+    var littleMermaidDays= prompt(3);
+    var brotherBearDays= prompt(5);
+    var herculesDays= prompt('How many days for Hercules?');
+    var dailyRate= ('3 dollars per day');
+    alert('littleMermaidDays' + 'dailyRate');
+    alert('brotherBearDays' + 'dailyRate');
+    alert('herculesDays' + 'dailyRate');
