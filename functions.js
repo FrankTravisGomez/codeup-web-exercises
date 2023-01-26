@@ -43,7 +43,7 @@ console.log(helloMessage);
  */
 var myName='Travis';
 sayHello(myName);
-console.log(sayHelloMyName);
+console.log(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -112,5 +112,6 @@ function applyDiscount(totalPrice, discountPrice){
     var discountPrice =.2
     var totAmount = applyDiscount( totalPrice * discountPirce);
     return
+    console.log(applyDiscount);
 }
 
