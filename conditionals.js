@@ -21,13 +21,23 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(input) {
+function analyzeColor(input){
     if(input === "red"){
-    return "red is a nice color"
-    }else if(input === "orange"){
-        return " orange is a wonderful color"
-    }else{
-        return input + "what color is that" + input;
+        return " red is nice color"
+    } else if ( input === "orange"){
+        return " orange is wonderful color!"
+    } else if ( input === "yellow"){
+        return " eh that color is alright..."
+    } else if ( input === "green"){
+        return "the color of boogers ew!"
+    } else if (input === "blue"){
+        return " the color of the summer sky"
+    } else if ( input === "indigo"){
+        return " not sure what color that is but hopefully it/s better than a windigio spirit"
+    } else if ( inpit === "violet"){
+        return " violet you/re turning violet!"
+    } else{
+        return input + " not sure what color that is" + input;
     }
 }
 // Don't change the next two lines!
@@ -50,18 +60,47 @@ console.log(analyzeColor(randomColor));
  */
 function analyzeColor(input) {
    // if(input === "red"){
-    //    return "red is a nice color"
-   // }else if(input === "orange"){
-   //     return " orange is a wonderful color"
-   // }else{
-   //     return input + "what color is that" + input;
-  //  }
+    //         return " red is nice color"
+    //     } else if ( input === "orange"){
+    //         return " orange is wonderful color!"
+    //     } else if ( input === "yellow"){
+    //         return " eh that color is alright..."
+    //     } else if ( input === "green"){
+    //         return "the color of boogers ew!"
+    //     } else if (input === "blue"){
+    //         return " the color of the summer sky"
+    //     } else if ( input === "indigo"){
+    //         return " not sure what color that is but hopefully it/s better than a windigio spirit"
+    //     } else if ( inpit === "violet"){
+    //         return " violet you/re turning violet!"
+    //     } else{
+    //         return input + " not sure what color that is" + input;
+    //     }
 }
 switch(input){
     case "red":
          "red is a nice color"
-    break;
-
+        break;
+    case " orange":
+        "orange is wonderful color!"
+        break;
+    case "yello":
+        "eh that color is alright..."
+        break;
+    case "green":
+        "the color of boogers ew!"
+        break;
+    case "blue":
+        "the color of the summer sky"
+        break;
+    case "indigo":
+        "not sure what color that is but hopefully it/s better than a windigio spirit"
+        break;
+    case "violet":
+        "violet you/re turning violet!"
+        break;
+    default:
+        input + "who knows" + input;
 }
 /**
  * TODO:
@@ -70,7 +109,7 @@ switch(input){
  * function to show it to the user.
  */
 var userColor = prompt+ ("hello user what color do you like?");
-alert+(analyzeColor(userColor));
+alert(analyzeColor(userColor));
 /* ########################################################################## */
 
 /**
@@ -99,7 +138,7 @@ function calculateTotal(luckyNumber, totalAmount){
         return totalAmount-(totalAmount*.10);
     }else if(luckyNumber === 3){
         return totalAmount-(totalAmount*.30);
-    }return totalAmount;
+    }return totalAmount + totalAmount;
 }
 /**
  * TODO:
@@ -109,10 +148,10 @@ function calculateTotal(luckyNumber, totalAmount){
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
+//Generate a random number between 0 and 6
  var luckyNumber = Math.floor(Math.random() * 6);
 var totalBill = prompt("what is your total?");
-alert("news number")
+alert("news number" + luckyNumber + " is your total" + calculateTotal(luckyNumber,totalBill ) + "today");
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -131,3 +170,15 @@ alert("news number")
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var wantToGiveNumber = confirm ("would you like to give a number?");
+if (wantToGiveNumber) {
+    alert("yay")
+    var userNumber = seven("what number?");
+    if (typeof (userNumber)) ;
+    alert(isNan)
+}else{
+    alert("pkay give me a number:" + userNumber);
+    var isEven = userNumber %2 ===0;
+    var addOneHundred= userNumber+ 100;
+    var isPositive= userNumber =0;
+}

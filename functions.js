@@ -91,7 +91,7 @@ function calculateTip(tipDecimal, totalBill){
  * then display the dollar amount they should tip
  */
 var billTotal = prompt("how much is your bill?");
-var tipPercent = prompt("would you like to leave a tip")
+var tipPercent = prompt("how much to tip")
 alert("thank you for the money" + calculateTip(tipPercent + billTotal));
 /**
  * TODO:
@@ -108,10 +108,10 @@ alert("thank you for the money" + calculateTip(tipPercent + billTotal));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(totalPrice, discountPrice){
-    var totalPrice = 100
-    var discountPrice =.2
-    var totAmount = applyDiscount( totalPrice * discountPirce);
-    return
-    console.log(applyDiscount);
+    var mathBucket = totalPrice(totalPrice * discountPrice)
+    var applyDiscount = 100;
+    var discountPercent = .2;
+    applyDiscount(applyDiscount, discountPercent)
+    return totalPrice
 }
 
