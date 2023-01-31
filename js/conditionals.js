@@ -79,28 +79,28 @@ function analyzeColor(input) {
 }
 switch(input){
     case "red":
-         "red is a nice color"
+         console.log("red is a nice color");
         break;
     case " orange":
-        "orange is wonderful color!"
+        console.log("orange is wonderful color!");
         break;
     case "yello":
-        "eh that color is alright..."
+        console.log("eh that color is alright...");
         break;
     case "green":
-        "the color of boogers ew!"
+        console.log("the color of boogers ew!");
         break;
     case "blue":
-        "the color of the summer sky"
+        console.log("the color of the summer sky");
         break;
     case "indigo":
-        "not sure what color that is but hopefully it/s better than a windigio spirit"
+        console.log("not sure what color that is but hopefully it/s better than a windigio spirit");
         break;
     case "violet":
-        "violet you/re turning violet!"
+        console.log("violet you/re turning violet!");
         break;
     default:
-        input + "who knows" + input;
+        console.log("im sorry idk what color that is" + input + "...");
 }
 /**
  * TODO:

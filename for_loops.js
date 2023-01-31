@@ -1,19 +1,27 @@
 'use strict';
-function showMultiplicationTable(i){
-    var multiple =1;
-    while (multiple <= 10){
-        console.log(i + "x" + multiple + "=" + (i*multiple));
-        ++multiple;
-
-    }return"Done";
+function showMultiplicationTable(number){
+    for(var i=1; i< 10; i++){
+        console.log(number + "x" + i + "="+(number * i));
+   }
 }
-function getRandomIntInclusive(x, y) {
-    x = Math.ceil(20);
-    y = Math.floor(200);
-    return Math.floor(Math.random() * (y - x + 1) + x);
-    for (let x = 20; y < 200; x++) {
-        console.log(x,y);
+showMultiplicationTable(7);
+
+for(var i=0; i<10; i++){
+    var random= Math.floor(Math.random()*180 +20)
+}console.log(random);
+if(random %2 ===0){
+    console.log(random+" is even")
+}else if(random %2=== 1);
+console.log(random + " is odd")
+
+for(var i=1; i<=9; i++){
+    var iString ="";
+    for(var n=1; n<=i; n++){
+        iString +=i;
+        console.log(iString);
     }
 }
 
-
+for(var i=100; i>=5; i=i-5){
+    console.log(i);
+}
