@@ -18,9 +18,10 @@ var names =['Travis', 'Joel', 'Laura', 'James'];
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-names.forEach(function(names){
-    console.log(names);
-})
+console.log[0];
+console.log[1];
+console.log[2];
+console.log[3];
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
