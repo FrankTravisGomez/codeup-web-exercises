@@ -11,11 +11,11 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    var person= {
-        firstName: "Travis ",
-        lastName: "Gomez",
-    };console.log(person.firstName)
-    console.log(person.lastName)
+    var person= {};
+        person.firstName= "Travis ";
+        person.lastName= "Gomez";
+    console.log(person.firstName)
+    console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -26,7 +26,7 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    console.log("Hello from " + person["firstName"]+person [ "lastName"]+"!");
+    console.log("Hello from " + person["firstName"]+person.lastName+"!");
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -40,21 +40,18 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
-    function shoppers(totalDiscount, totalAmount){
-        if(totalDiscount === 180){
-            return totalAmount;
-        }else if(totalDiscount === 250){
-            return totalAmount-(totalAmount*.12);
-        }else if(totalDiscount === 320){
-            return totalAmount-(totalAmount*.12);
-        }return totalAmount + totalAmount;
-    }
+
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
-
     ];
+    shoppers .forEach(x){
+        for(amount => 200){
+            console.log(number + "x" + i + "="+(number * i));
+        }
+    }
+    showMultiplicationTable(7);
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -68,25 +65,12 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    var books= {
-        bookOne: "Harry Potter ",
-        firstName: "Travis ",
-        lastName: "Gomez",
-        bookTwo: "the boy that cried wolf ",
-        firstNameOne: "jk ",
-        lastNameTwo: "Rowling ",
-        bookThree: "Twilight ",
-        firstNameThree: "Stephenie ",
-        lastNameThree: "Meyer ",
-    };console.log(books.bookOne)
-    console.log(books.firstName)
-    console.log(books.lastName)
-    console.log(books.bookTwo)
-    console.log(books.firstNameOne)
-    console.log(books.lastNameTwo)
-    console.log(books.bookThree)
-    console.log(books.firstNameThree)
-    console.log(books.lastNameThree)
+    var books = ['Harry Potter by JK Rowling.','Twilight by Stephenie Meyer.','Berserk by Kentaro Miura.','Lord of the rings by J. R. R. Tolkien.','Jurassic Park by Michael Crichton.']
+    console.log(books[0]);
+    console.log(books[1]);
+    console.log(books[2]);
+    console.log(books[3]);
+    console.log(books[4]);
     /**
      * TODO:
      * Loop through the books array and output the following information about

@@ -12,9 +12,8 @@
      */
     console.log(planetsString);
     var planetsArray = planetsString.split('|');
-    console.log(planetsArray);
-    var planetsArray = planetsArray.join('|');
-    // console.log(planetsArray);
+
+    console.log(planetsArray)
 
     /**
      * TODO:
@@ -26,8 +25,8 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-    console.log(planetsString);
-    var planetsArray = planetsString.split('|');
+    planetsArray.unshift("<br>");
     console.log(planetsArray);
-    var planetsArray = planetsArray.join('<br>');
+    planetsArray.push("</br>");
+    console.log(planetsArray);
 })();
