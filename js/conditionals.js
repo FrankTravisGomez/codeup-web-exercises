@@ -34,11 +34,11 @@ function analyzeColor(input){
         return " the color of the summer sky"
     } else if ( input === "indigo"){
         return " not sure what color that is but hopefully it/s better than a windigio spirit"
-    } else if ( inpit === "violet"){
-        return " violet you/re turning violet!"
+    } else if ( input === "violet"){
+       return " violet you/re turning violet!"
     } else{
-        return input + " not sure what color that is" + input;
-    }
+       return input + " not sure what color that is" + input;
+  }
 }
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -58,7 +58,7 @@ console.log(analyzeColor(randomColor));
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-function analyzeColor(input) {
+//function analyzeColor(input) {
    // if(input === "red"){
     //         return " red is nice color"
     //     } else if ( input === "orange"){
@@ -76,7 +76,8 @@ function analyzeColor(input) {
     //     } else{
     //         return input + " not sure what color that is" + input;
     //     }
-}
+//}
+function analyzeColor(input){
 switch(input){
     case "red":
          console.log("red is a nice color");
@@ -101,7 +102,7 @@ switch(input){
         break;
     default:
         console.log("im sorry idk what color that is" + input + "...");
-}
+}};
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -173,12 +174,12 @@ alert("news number" + luckyNumber + " is your total" + calculateTotal(luckyNumbe
 var wantToGiveNumber = confirm ("would you like to give a number?");
 if (wantToGiveNumber) {
     alert("yay")
-    var userNumber = seven("what number?");
+    var userNumber = calculateTotal("what number?");
     if (typeof (userNumber)) ;
-    alert(isNan)
+    alert("isNan")
 }else{
-    alert("pkay give me a number:" + userNumber);
+    alert("okay give me a number:" + userNumber);
     var isEven = userNumber %2 ===0;
     var addOneHundred= userNumber+ 100;
     var isPositive= userNumber =0;
-}
+};

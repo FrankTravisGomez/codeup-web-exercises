@@ -26,6 +26,7 @@ names.forEach(function(names){
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
+    console.log("------");
 for(var i=0; i< names.length; i++){
     console.log('The name at index ' + i + ' is: ' + names[i]);
 }
@@ -50,12 +51,17 @@ names.forEach(function(names){
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+    function first(array){
+        return array[0];
+    }
+    console.log(first(names));
+    function second(array){
+        return array[1];
+    }
+    console.log(second(names));
 
-        var input = [1, 2, 3, 4, 5];
-        console.log(input[input.length -5])
-        var input = [1, 2, 3, 4, 5];
-        console.log(input[input.length -4])
-        var input = [1, 2, 3, 4, 5];
-        console.log(input[input.length -1])
-
+    function last(array){
+        return array[3];
+    }
+    console.log(last(names));
 })();
