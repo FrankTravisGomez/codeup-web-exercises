@@ -11,11 +11,14 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+    console.log("---first TODO---")
     var person= {};
         person.firstName= "Travis ";
         person.lastName= "Gomez";
+        person.sayHello= "Hello from "
     console.log(person.firstName)
-    console.log(person.lastName);
+    console.log(person.lastName)
+    console.log(person.sayHello);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -25,8 +28,8 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
-    console.log("Hello from " + person["firstName"]+person.lastName+"!");
+console.log("---second TODO---")
+    console.log(person.sayHello + person["firstName"]+person.lastName+"!");
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -40,18 +43,19 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
-
+console.log("---third TODO---")
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-    shoppers .forEach(x){
-        for(amount => 200){
-            console.log(number + "x" + i + "="+(number * i));
-        }
-    }
-    showMultiplicationTable(7);
+    //shoppers .forEach(x){
+       // for(amount => 200){
+         //   console.log(number + "x" + i + "="+(number * i));
+       // }
+   // }
+   //
+    console.log(shoppers)
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -65,12 +69,63 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    var books = ['Harry Potter by JK Rowling.','Twilight by Stephenie Meyer.','Berserk by Kentaro Miura.','Lord of the rings by J. R. R. Tolkien.','Jurassic Park by Michael Crichton.']
-    console.log(books[0]);
-    console.log(books[1]);
-    console.log(books[2]);
-    console.log(books[3]);
-    console.log(books[4]);
+    console.log("---fourth TODO---")
+
+    var books = [
+        {
+            title: "Harry Potter",
+             authors: {
+                 firstName: "JK",
+                 lastName: "Rowling"
+             }
+        },
+        {
+            title: "Twilight",
+            authors: {
+                firstName: "Stephenie",
+                lastName: "Meyer"
+            }
+        },
+        {
+            title: "Berserk",
+            authors: {
+                firstName: "Kentaro",
+                lastName: "Miura"
+            }
+        },
+        {
+            title: "Lord of the rings",
+            authors: {
+                firstName: "J. R. R.",
+                lastName: "Tolkien"
+            }
+        },
+        {
+            title: "Jurassic Park",
+            authors: {
+                firstName: "Michael",
+                lastName: "Crichton"
+
+            }
+
+        }
+    ];
+    console.log(books[0].title)
+    console.log(books[0].authors.firstName)
+    console.log(books[0].authors.lastName)
+    console.log(books[1].title)
+    console.log(books[1].authors.firstName)
+    console.log(books[1].authors.lastName)
+    console.log(books[2].title)
+    console.log(books[2].authors.firstName)
+    console.log(books[2].authors.lastName)
+    console.log(books[3].title)
+    console.log(books[3].authors.firstName)
+    console.log(books[3].authors.lastName)
+    console.log(books[4].title)
+    console.log(books[4].authors.firstName)
+    console.log(books[4].authors.lastName)
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -95,7 +150,17 @@
      *      ---
      *      ...
      */
-
+    console.log("---fifth TODO---")
+    var index = books.indexOf('Harry Potter');
+    console.log(index);
+    index = books.indexOf('Twilight');
+    console.log(index);
+    index = books.indexOf('Berserk');
+    console.log(index);
+    index = books.indexOf('Lord of the rings');
+    console.log(index);
+    index = books.indexOf('Jurassic Park');
+    console.log(index);
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
