@@ -110,21 +110,7 @@ console.log("---third TODO---")
 
         }
     ];
-    console.log(books[0].title)
-    console.log(books[0].authors.firstName)
-    console.log(books[0].authors.lastName)
-    console.log(books[1].title)
-    console.log(books[1].authors.firstName)
-    console.log(books[1].authors.lastName)
-    console.log(books[2].title)
-    console.log(books[2].authors.firstName)
-    console.log(books[2].authors.lastName)
-    console.log(books[3].title)
-    console.log(books[3].authors.firstName)
-    console.log(books[3].authors.lastName)
-    console.log(books[4].title)
-    console.log(books[4].authors.firstName)
-    console.log(books[4].authors.lastName)
+    console.log(books)
 
     /**
      * TODO:
