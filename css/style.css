@@ -3,3 +3,16 @@
     color: purple;
     text-decoration: underline;
 }
+
+h1{
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+}
+h2{
+    color: red;
+    text-decoration: underline;
+}
+style{
+    color: aquamarine;
+}
