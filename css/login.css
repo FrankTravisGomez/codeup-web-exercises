@@ -39,21 +39,21 @@ fieldset {
 }
 
 .btn-block {
-    width: 100%/* This element should use 100% of the width */
+    width: 100%;/* This element should use 100% of the width */
 }
 
 .btn {
     padding: 8px;/* There must be a separation of 8px between the text and the border of this element */
     font-weight: bold;/* The text color of this element should be white and bold */
     color:white;
-    border: 1px lightgrey;/* The border of this element should be 1px, and its color should be light grey */
+    border-style: solid;/* The border of this element should be 1px, and its color should be light grey */
     background-color: #0fb784;
 }
 
 .form-control {
     padding: 4px 4px;/* There must be 4px on top of the text and below the text of an input with this class */
     margin: .5em;/* It should have a separation of .5em from elements on top of it and below it */
-    width: calc(100% - 50px);
+    width: calc(100% - 27px);
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
