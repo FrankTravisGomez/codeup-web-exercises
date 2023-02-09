@@ -11,7 +11,7 @@ body, html {
 }
 
 form {
-    margin: 1em/* This form should be separated from other elements by 1em */
+    padding: 1em/* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
 }
 
@@ -19,7 +19,7 @@ fieldset {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    margin: 1em;/* There must be 1em between the content and the border of this element */
+    padding: 1em;/* There must be 1em between the content and the border of this element */
     border: 0;/* It should have no border */
     background: white;/* Its background should be white */
 }
@@ -43,20 +43,21 @@ fieldset {
 }
 
 .btn {
-    margin: 8px;/* There must be a separation of 8px between the text and the border of this element */
-    color: white;/* The text color of this element should be white and bold */
+    padding: 8px;/* There must be a separation of 8px between the text and the border of this element */
+    font-weight: bold;/* The text color of this element should be white and bold */
+    color:white;
     border: 1px lightgrey;/* The border of this element should be 1px, and its color should be light grey */
     background-color: #0fb784;
 }
 
 .form-control {
-    padding: 4px;/* There must be 4px on top of the text and below the text of an input with this class */
+    padding: 4px 4px;/* There must be 4px on top of the text and below the text of an input with this class */
     margin: .5em;/* It should have a separation of .5em from elements on top of it and below it */
-
+    width: calc(100% - 50px);
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: 100%;
+
 }
 
 
