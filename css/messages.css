@@ -9,6 +9,7 @@ body, html {
     --main-bg-color: #bae3fa;
 }
 .message-info{
+    border-color: #b3dbfa;
     border-style: solid;
     font-weight: bold;
     padding: 10px 40px;
@@ -23,6 +24,8 @@ body, html {
     color: darkblue;
 }
 .message-success{
+    border-color: #acf1db;
+    border-style: solid;
     font-weight: bold;
     padding: 10px 40px;
     .text-*;
@@ -30,7 +33,6 @@ body, html {
     right: 300px;
     top: 55px;
     background-color: #b3ffe0;
-    border: 1px green;
     width: 500px;
     border-radius: 5px;
     color: darkgreen;
@@ -43,12 +45,15 @@ body, html {
     right: 300px;
     top: 100px;
     background-color: #fafac6;
-    border: 1px darkgoldenrod;
+    border-style: solid;
+    border-color: #eeeeb4;
     width: 500px;
     border-radius: 5px;
     color: darkgoldenrod;
 }
 .message-error{
+    border-color: #eab0be;
+    border-style: solid;
     font-weight: bold;
     padding: 10px 40px;
     .text-*;
@@ -56,7 +61,6 @@ body, html {
     right: 300px;
     top: 145px;
     background-color: #f8baba;
-    border: 1px #cc6969;
     width: 500px;
     border-radius: 5px;
     color: #ab0022;
