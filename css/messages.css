@@ -21,7 +21,7 @@ body, html {
     background-color: var(--main-bg-color);
     width: 500px;
     border-radius: 5px;
-    color: darkblue;
+    color: #5959b4;
 }
 .message-success{
     border-color: #acf1db;
@@ -35,7 +35,7 @@ body, html {
     background-color: #b3ffe0;
     width: 500px;
     border-radius: 5px;
-    color: darkgreen;
+    color: #429f42;
 }
 .message-warning{
     font-weight: bold;
@@ -49,7 +49,7 @@ body, html {
     border-color: #eeeeb4;
     width: 500px;
     border-radius: 5px;
-    color: darkgoldenrod;
+    color: #bea05d;
 }
 .message-error{
     border-color: #eab0be;
@@ -63,5 +63,5 @@ body, html {
     background-color: #f8baba;
     width: 500px;
     border-radius: 5px;
-    color: #ab0022;
+    color: #9a3d52;
 }
