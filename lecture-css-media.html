@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+    }
+    body{
+      height: 100vh; /* vh stands for view height */
+    }
+    div{
+      width:100px;
+      height:100px;
+      background-color: #9a3d52;
+      border: 2px solid black;
+      margin: 10px;
+    }
+    @media screen and(min-width: 200px) {
+        .pixel {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    }
+    @media screen and (min-width: 780px){
+        .pixel{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<div>Content</div>
+<div>Content</div>
+<div>Content</div>
+
+<div class="pixel setting">1</div>
+<div class="pixel setting">2</div>
+<div class="pixel setting">3</div>
+
+</body>
+</html>
