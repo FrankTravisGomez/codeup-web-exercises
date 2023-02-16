@@ -3,11 +3,11 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+
 }
 .alert-info{
     display: flex;
     justify-content: center;
-
 }
 .alert-info a{
     background-color: #c0ffff;
@@ -21,28 +21,38 @@
 h1{
     display: flex;
     justify-content: space-evenly;
-
-
+    height: 70px;
 }
+
 .nav-links{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    height: 115px;
+    /*align-items: stretch;*/
+    width: 47%;
+    height: 150px;
+    margin: 12px;
+    list-style-type: none;
 }
 .nav-links a{
     background-color: lightgrey;
-    border:  2px solid lightgrey;
+    border:  2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .1em 1em;
+    width: 200%;
+    height: 50px;
+    /*height: 40px;*/
+}
+.header-img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /*padding: 1em 3em;*/
-    width: 200%;
-    align-items: center;
-
+    height: 250px; /*gives me extra space to work with*/
+    margin: 12px; /* changes the box size maybe an easier way of more specific i will find out*/
+    list-style-type: none;
 }
-
 
 
 #main{
