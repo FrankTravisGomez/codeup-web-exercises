@@ -2,5 +2,15 @@
 
 .jumbotron{
     height:346px;
+    background-image: url("/img/pizza.png");
     background-size: cover;
 }
+
+/*
+.p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+*/
+
