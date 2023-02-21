@@ -1,11 +1,27 @@
-
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 
 .jumbotron{
     height:346px;
     background-image: url("/img/pizza.png");
     background-size: cover;
 }
+.card-body{
+    background-color: blue;
+    color:white;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: flex-end;
+}
 
+/*.navbar-text{*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
 /*
 .p{
     display: flex;
@@ -13,4 +29,18 @@
     align-content: center;
 }
 */
+/*.card-body{*/
+/*    background-color: blue;*/
+/*    color: white;*/
+/*}*/
+/*.btn-primary{*/
+/*    width: 250px;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: flex-end;*/
+/*}*/
+/*.btn-outline-success{*/
+/*   display: flex;*/
+/*    align-items: stretch;*/
+/*}*/
 

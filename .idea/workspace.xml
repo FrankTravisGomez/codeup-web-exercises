@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e993df05-b2ec-4a14-8dea-35e71af55078" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/JS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/break_and_continue.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/break_and_continue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media-queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/for_loops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loops.html" beforeDir="false" afterPath="$PROJECT_DIR$/loops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/objects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/order-pizza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planets-string.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/planets-string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split-join.html" beforeDir="false" afterPath="$PROJECT_DIR$/split-join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/training.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="TypeScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,7 +69,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="for_loops.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/for_loops.js" working-dir="$PROJECT_DIR$">
+    <configuration name="for_loops.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/for_loops.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -77,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674233191209</updated>
       <workItem from="1674233193118" duration="12814000" />
-      <workItem from="1674489914203" duration="367407000" />
+      <workItem from="1674489914203" duration="408698000" />
     </task>
     <servers />
   </component>

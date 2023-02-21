@@ -5,13 +5,13 @@
     padding:0;
 }
 
-.alert-info{
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    margin: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/*.alert-info{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    height: 50px;*/
+/*    margin: 12px;*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*}*/
 
 .alert-info a{
     background-color: #c0ffff;
@@ -22,6 +22,9 @@
     width: 95%;
     text-decoration: none;
     align-items: center;
+    height: 50px;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -46,7 +49,7 @@ h1{
 
 .nav-links a{
     background-color: lightgrey;
-    border:  2px solid white;
+    border:  5px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +88,7 @@ img{
     h1{
         display: flex;
         justify-content: flex-start;
+        width: 30%;
     }
 }
 @media screen and (min-width: 780px){
@@ -94,23 +98,49 @@ img{
         flex-direction: row;
         align-items: flex-start;
         width: 1400px;
-       /* height: 200px;
-        margin: 12px;*/
+       /*height: 200px;*/
+        /*margin: 12px;*/
         list-style-type: none;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
 @media screen and (min-width: 780px){
     .nav-links a{
-        background-color: white;
-        border:  2px solid white;
-        display: flex;
-        /*flex-direction: column;*/
-        align-items: flex-start;
-        justify-content: flex-end;
-        /*padding: .1em 1em;*/
-        /*width: 200%;*/
+        background-color: red;
+        /*border:  2px solid white;*/
+        /*!*display: flex;*!*/
+        /*align-items: flex-start;*/
+        /*justify-content: center;*/
         height: 50px;
+        width: auto;
+    }
+}
+/*@media screen and (min-width: 768px){*/
+/*    .alert-info{*/
+/*        color:red;*/
+/*        display: flex;*/
+/*        justify-content: flex-start;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 768px){
+    .alert-info a{
+        border:  none;
+        width: 0%;
+        text-decoration: red;
+        height: 0%;
+        margin: 0%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 250px;
+        width: 93%;
+        margin: auto;
+        background-color: #9a3d52;
     }
 }
 /**{
