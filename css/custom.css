@@ -9,8 +9,8 @@
     background-image: url("/img/pizza.png");
     background-size: cover;
 }
-.card-body{
-    background-color: blue;
+.build-color{
+    background-color: #1683ff;
     color:white;
 }
 .navbar-brand{
@@ -28,11 +28,7 @@
     justify-content: center;
     align-content: center;
 }
-*/
-/*.card-body{*/
-/*    background-color: blue;*/
-/*    color: white;*/
-/*}*/
+
 /*.btn-primary{*/
 /*    width: 250px;*/
 /*    display: flex;*/
@@ -44,3 +40,17 @@
 /*    align-items: stretch;*/
 /*}*/
 
+.bg-light{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.navbar-nav{
+    display: flex;
+    align-items: baseline;
+}
+
+/*.card{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
