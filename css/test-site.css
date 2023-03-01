@@ -1,6 +1,6 @@
-/**{*/
-/*    background-color: orange;*/
-/*}*/
+*{
+    background-color: #f1c379;
+}
 
 .img-thumbnail{
     height: 250px;
@@ -13,4 +13,18 @@ h1{
     font-family: 'Bilbo', cursive;
     display: flex;
     justify-content: center;
+    border: 3px solid red;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    border: 3px solid red;
+}
+
+.figure-img{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
 }

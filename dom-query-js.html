@@ -6,7 +6,9 @@
 </head>
 <body>
 
+
 <h1 id="main-header">Hello World!</h1>
+
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -25,14 +27,20 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
-<script>
+    <button id="btn1">change h1</button>
+    <button id="btn2">change b2</button>
+    <button id="btn3">change b3</button>
+    <button id="btn4">change h2</button>
+    <button id="btn5">change font color</button>
+
+    <script>
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById('main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool"
+        // mainHeader.innerHTML = "JavaScript is Cool"
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById('sub-header');
 
@@ -54,14 +62,67 @@
         }
 
         // TODO: Set text color of li with dbid = 1 to blue
-        for(var i=0; i< listItems.length; i++){
             listItems[0].style.color='blue'
-        }
+
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.querySelector('.sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs.innerHTML="Mission Accomplished!";
+
+        // h1 text
+        var clickedButton = document.getElementById('btn1');
+        clickedButton.addEventListener('click', myFunction)
+
+        function myFunction(){
+            document.getElementById('main-header').innerHTML = 'JavaScript is Cool!';
+        }
+        //button text
+        var buttonClick = document.getElementById('btn2');
+        buttonClick.addEventListener('click', functionMy)
+
+        function functionMy(){
+            document.getElementById("btn2").innerHTML = 'Im a word not a number'
+        }
+        // button text
+        var clickButton = document.getElementById('btn3');
+        clickButton.addEventListener('click', myFunctionOne);
+
+        function myFunctionOne(){
+            document.getElementById('btn3').innerHTML= 'Number!'
+        }
+
+        var clickButton = document.getElementById('btn4');
+        clickButton.addEventListener('click', myFunctionTwo);
+
+        function myFunctionTwo(){
+            document.getElementById('sub-header').innerHTML = 'Codeup is AWESOME!'
+        }
+
+        var clickButton = document.getElementById('btn5');
+        clickButton.addEventListener('click', myFunctionThree);
+
+        function myFunctionThree(){
+            document.querySelector('.sub-paragraph').style.color ='#ab0022'
+        }
+
+
+
+        var listner = function (e){
+            alert('JavaScript is Cool!');
+        }
+        document.getElementById('btn1').addEventListener('click', listner);
+
+        var word = function (i){
+
+        }
+        // below i attempted to get blur to work
+        // var blurWord =document.getElementById('btn1');
+        // blurWord.addEventListener('click', blurEvent);
+        //
+        // function blurEvent(){
+        //     document.getElementById('main-header').onblur;
+        // }
 
     })();
 </script>
