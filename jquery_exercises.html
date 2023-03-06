@@ -5,15 +5,76 @@
     <title>Title</title>
 </head>
 <body>
+<h1 id="codeup">Hello Codeup</h1>
+<!--exercise1-->
+<!--    <p>-->
+<!--        here is a ton of words that will be used for a grade i will not use proper english mwhahahaha-->
+<!--    </p>-->
+<!--<div id="jq">-->
+<!--    <ul class="codeup">-->
+<!--        <li id="pizza">pizza</li>-->
+<!--        <li class="trash">trash</li>-->
+<!--        <li id="fastfood">fastfood</li>-->
+<!--    </ul>-->
+<!--</div>-->
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity=
-        "sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!--exercise2-->
+<!--<p>here is a ton of words that will be used for a grade i will not use proper english mwhahahaha</p>-->
+<!--<div id="jq">-->
+<!--    <ul class="words">-->
+<!--        <li class="codeup">pizza</li>-->
+<!--        <li id="codeup">trash</li>-->
+<!--        <li class="codeup">fastfood</li>-->
+<!--    </ul>-->
+<!--</div>-->
 
+<!--exercise3-->
+<p>here is a ton of words that will be used for a grade i will not use proper english mwhahahaha</p>
+<div id="jq">
+    <ul class="words">
+        <li class="codeup">pizza</li>
+        <li id="stuff">trash</li>
+        <li class="codeup">fastfood</li>
+    </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<!-- intro -->
+<!--<script>-->
+<!--    jQuery(function () {-->
+<!--        alert("DOM has finished loading")-->
+<!--    });-->
+<!--</script>-->
+<!-- Id Selectors -->
+<!--<script>-->
+<!--    $('#pizza').css('font-size', '25px')-->
+<!--        .css('background-color', 'purple')-->
+<!--        .css('color','white');-->
+<!--    -->
+<!--    $('h1').css('font-size', '50px');-->
+<!--    $('#codeup').css('color', 'blue');-->
+<!--    $('.jq').css()-->
+<!--</script>-->
+
+<!-- Class Selectors -->
+<!--<script>-->
+
+<!--$('.words').css({"border-color": "#ab0022",-->
+<!--    "border-weight":"1px",-->
+<!--    "border-style":"solid", "padding":"20px"});-->
+<!--$('.codeup').css({"border-color": "#ab0022",-->
+<!--    "border-weight":"1px",-->
+<!--    "border-style":"solid", "padding":"20px"});-->
+<!--</script>-->
+
+<!-- Element Selectors -->
 <script>
-
-    jQuery(function () {
-        alert("DOM has finished loading")
-    });
+    $('.words').css({"border-color": "#ab0022",
+       "border-weight":"1px",
+        "border-style":"solid", "font-size":"20px"});
+    $('h1, p,li').css("background-color", "yellow")
+    let content = $('h1').html();
+    alert(content)
 
 </script>
 
