@@ -45,7 +45,7 @@
         var subHeader = document.getElementById('sub-header');
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = '#0344ef';
+        // subHeader.style.color = '#0344ef';
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
@@ -55,11 +55,11 @@
         }
 
         // TODO: Set text color on every other list item to grey
-        for(var i=0; i< listItems.length; i++){
-            listItems[0].style.color='grey'
-            listItems[1].style.color='grey'
-            listItems[3].style.color='grey'
-        }
+        // for(var i=0; i< listItems.length; i++){
+        //     listItems[0].style.color='grey'
+        //     listItems[1].style.color='grey'
+        //     listItems[3].style.color='grey'
+        // }
 
         // TODO: Set text color of li with dbid = 1 to blue
             listItems[0].style.color='blue'
@@ -68,7 +68,7 @@
         var subParagraphs = document.querySelector('.sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs.innerHTML="Mission Accomplished!";
+        // subParagraphs.innerHTML="Mission Accomplished!";
 
         // h1 text
         var clickedButton = document.getElementById('btn1');
@@ -96,26 +96,31 @@
         clickButton.addEventListener('click', myFunctionTwo);
 
         function myFunctionTwo(){
-            document.getElementById('sub-header').innerHTML = 'Codeup is AWESOME!'
+            document.getElementById('sub-header').style.color='blue'
         }
 
         var clickButton = document.getElementById('btn5');
         clickButton.addEventListener('click', myFunctionThree);
 
         function myFunctionThree(){
-            document.querySelector('.sub-paragraph').style.color ='#ab0022'
+            document.querySelector('.sub-paragraph').innerHTML='Mission Complete!'
         }
 
+        // var clickButton = document.getElementById('btn2');
+        // clickButton.addEventListener('click', myFunctionFour);
+        //
+        // function myFunctionFour(){
+        //     document.getElementById('2').style.color='blue'
+        // }
 
-
-        var listner = function (e){
-            alert('JavaScript is Cool!');
-        }
-        document.getElementById('btn1').addEventListener('click', listner);
-
-        var word = function (i){
-
-        }
+        // var listner = function (e){
+        //     alert('JavaScript is Cool!');
+        // }
+        // document.getElementById('btn1').addEventListener('click', listner);
+        //
+        // var word = function (i){
+        //
+        // }
         // below i attempted to get blur to work
         // var blurWord =document.getElementById('btn1');
         // blurWord.addEventListener('click', blurEvent);
@@ -123,6 +128,33 @@
         // function blurEvent(){
         //     document.getElementById('main-header').onblur;
         // }
+
+        var coffee= document.getElementById('light');
+        light.innerText="Light City, Half City, Connamon"
+
+        var listItems = document.getElementById('light');
+
+        for(var i=0; i< listItems.length; i++){
+            console.log(listItems[1])
+            console.log(listItems[2])
+            console.log(listItems[3])
+        }
+
+        var col3 = document.querySelector('.col-3');
+        col3.addEventListener('click', myFunctionOne);
+
+
+
+        var buttonClick
+
+        var coffees = document.getElementsByTagName('id');
+
+        for(var i=0; i< coffees.length; i++){
+            console.log(coffees[4])
+        }
+
+
+
 
     })();
 </script>
