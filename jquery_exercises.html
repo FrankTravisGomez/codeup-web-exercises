@@ -29,7 +29,7 @@
 <!--</div>-->
 
 <!--exercise3-->
-<p>here is a ton of words that will be used for a grade i will not use proper english mwhahahaha</p>
+<p class="para">here is a ton of words that will be used for a grade i will not use proper english mwhahahaha</p>
 <div id="jq">
     <ul class="words">
         <li class="codeup">pizza</li>
@@ -68,15 +68,44 @@
 <!--</script>-->
 
 <!-- Element Selectors -->
-<script>
-    $('.words').css({"border-color": "#ab0022",
-       "border-weight":"1px",
-        "border-style":"solid", "font-size":"20px"});
-    $('h1, p,li').css("background-color", "yellow")
-    let content = $('h1').html();
-    alert(content)
+<!--<script>-->
+<!--    $('.words').css({"border-color": "#ab0022",-->
+<!--       "border-weight":"1px",-->
+<!--        "border-style":"solid", "font-size":"20px"});-->
+<!--    $('h1, p,li').css("background-color", "yellow")-->
+<!--    let content = $('h1').html();-->
+<!--    alert(content)-->
 
+<!--</script>-->
+
+<script>
+
+    $('#codeup').click(
+        function(){
+            $(this).css('background-color', '#FF0')
+
+    });
 </script>
+
+<script>
+    $('.para').dblclick(
+        function (){
+            $(this).css('font-size', '18px')
+    });
+</script>
+
+<!-- decided to go a little extra and added white font to the black background for last question -->
+<script>
+    $('.words').hover(
+        function(){
+            $(this).css('background-color', 'red')
+    },
+        function(){
+            $(this).css('background-color', 'black').css('color', 'white')
+        }
+    );
+</script>
+
 
 </body>
 </html>
