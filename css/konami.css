@@ -3,3 +3,7 @@ h1{
     justify-content: center;
     font-family: 'Lobster', cursive;;
 }
+
+body{
+    text-align: center;
+}
