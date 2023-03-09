@@ -18,16 +18,15 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
-
+<button>refresh</button>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    $.ajax("/inventory.json", {
-
-    }).done(function (data){
+    $.ajax("data/inventory.json"
+    ).done(function (data){
         console.log("is it working?")
     });
 
@@ -36,7 +35,21 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
+    $.ajax("data/inventory.json").done(function(data){
+        var html = '';
+            data.forEach(function(object){
 
+                    html += '<tr><td class="toolTitle ">' + object.title + "" + '</td>';
+                    html += '<td class="toolQuanity">' + object.quantity + '</td>';
+                    html += '<td class="toolCategories">' + object.price + '</td>';
+                    html += '<td class="toolPrice">' + object.categories + '</td>';
+                    html += '</tr>';
+                    console.log(object)
+            })
+        $("#insertProducts").append(html);
+
+            // console.log(data)
+    })
 
 })();
 </script>
