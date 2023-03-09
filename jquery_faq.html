@@ -3,61 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--    <style>-->
+<!--        .invisible {-->
+<!--            visibility: hidden;-->
+<!--        }-->
+<!--        .highlight {-->
+<!--            background: #b4d455;-->
+<!--        }-->
+<!--    </style>-->
+
     <style>
-        .invisible {
-            visibility: hidden;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        div {
+            margin: 24px;
+        }
+
+
+        #footer{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        #footer > ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            list-style: none;
+            border: 1px solid black;
+            border-radius: 100%;
+            margin: 12px;
+
+        }
+
+
+        #footer > ul > li {
+            border: 1px dashed red;
+            margin: 24px;
+            padding: 12px;
         }
         .highlight {
-            background: #b4d455;
+            background-color: yellow;
         }
+
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>-->
 </head>
 <body>
 
-<button id="btn1">THE MAGIC BUTTON</button>
-<p>State Park FACTS</p>
-<!-- 10 amazing facts about state parks below -->
-<dl>
-    <dt>Custer State Park</dt>
-    <dd class="invisible">FACT it's in South Dakota.</dd>
-    <br>
-    <dt>Itasca State Park</dt>
-    <dd class="invisible">FACT it's in Minnesota.</dd>
-    <br>
-    <dt>Silver Falls State Park</dt>
-    <dd class="invisible">FACT it's in Oregon.</dd>
-    <br>
-    <dt>Letchworth State Park</dt>
-    <dd class="invisible">FACT it's in New York.</dd>
-    <br>
-    <dt>Goblin Valley State Park</dt>
-    <dd class="invisible">FACT it's in Utah.</dd>
-    <br>
-    <dt>Caladesi Island State Park</dt>
-    <dd class="invisible">FACT it's in Florida.</dd>
-    <br>
-    <dt>Calaveras Big Trees State Park</dt>
-    <dd class="invisible">FACT it's in California.</dd>
-    <br>
-    <dt>Valley of Fire State Park</dt>
-    <dd class="invisible">FACT it's in Nevada.</dd>
-    <br>
-    <dt>Franconia Notch State Park</dt>
-    <dd class="invisible">FACT it's in New Hampshire.</dd>
-    <br>
-    <dt>Cape Henlopen State Park</dt>
-    <dd class="invisible">FACT it's in Delaware.</dd>
-</dl>
+<!--<button id="btn1">THE MAGIC BUTTON</button>-->
+<!--<p>State Park FACTS</p>-->
+<!--&lt;!&ndash; 10 amazing facts about state parks below &ndash;&gt;-->
+<!--<dl>-->
+<!--    <dt>Custer State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in South Dakota.</dd>-->
+<!--    <br>-->
+<!--    <dt>Itasca State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Minnesota.</dd>-->
+<!--    <br>-->
+<!--    <dt>Silver Falls State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Oregon.</dd>-->
+<!--    <br>-->
+<!--    <dt>Letchworth State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in New York.</dd>-->
+<!--    <br>-->
+<!--    <dt>Goblin Valley State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Utah.</dd>-->
+<!--    <br>-->
+<!--    <dt>Caladesi Island State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Florida.</dd>-->
+<!--    <br>-->
+<!--    <dt>Calaveras Big Trees State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in California.</dd>-->
+<!--    <br>-->
+<!--    <dt>Valley of Fire State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Nevada.</dd>-->
+<!--    <br>-->
+<!--    <dt>Franconia Notch State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in New Hampshire.</dd>-->
+<!--    <br>-->
+<!--    <dt>Cape Henlopen State Park</dt>-->
+<!--    <dd class="invisible">FACT it's in Delaware.</dd>-->
+<!--</dl>-->
+
+<!--<script>-->
+
+<!--$(".invisible").addClass("invisible");-->
+<!--$("#btn1").click(function (){-->
+<!--    $(".invisible").toggleClass("invisible");-->
+<!--})-->
+
+<!--</script>-->
+
+
+<h1>[j] [Q] [u] [e] [r] [y] ~ essential ~ methods</h1>
+
+<main id="content">
+
+    <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam at debitis dolorum enim, et explicabo facilis incidunt iste laboriosam molestias odit provident quos recusandae rerum sunt veniam voluptate voluptates!</div>
+
+    <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque commodi delectus dolore doloremque dolores enim, fugiat in incidunt inventore itaque iure natus nesciunt nihil omnis quibusdam quis quod vero.</div>
+
+    <div class="paragraph">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+        <span>Culpa dolores ducimus facilis libero nostrum officia sequi voluptates?</span>
+
+        <span>Alias corporis eos ex fugiat, illo minima nostrum officiis porro, possimus quam voluptates.</span>
+    </div>
+
+    <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi cum cupiditate debitis ea eligendi excepturi, fugiat id incidunt molestiae nulla quas quos sint velit voluptatem? Facere magnam perferendis similique.</div>
+
+</main>
+
+<footer id="footer">
+
+    <ul>
+        <h3 id="national-parks-heading">Big Bend National Park</h3>
+            <li>it's real</li>
+            <li>it's in texas</li>
+            <li>it's all natural</li>
+            <li>i have been there</li>
+    </ul>
+
+    <ul>
+        <h3>Big Thicket National Preserve</h3>
+            <li>it's real</li>
+            <li>it's in texas</li>
+            <li>it's all natural</li>
+            <li>i have been there</li>
+    </ul>
+
+    <ul>
+        <h3>Chamizal National Memorial</h3>
+            <li>it's real</li>
+            <li>it's in texas</li>
+            <li>it's all natural</li>
+            <li>i have been there</li>
+    </ul>
+</footer>
+<button id="btn">click here please.</button>
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 <script>
-
-$(".invisible").addClass("invisible");
-$("#btn1").click(function (){
-    $(".invisible").toggleClass("invisible");
-})
+    $('#btn').click(function (){
+        $("ul").each(function(){
+            $(this).children().last().css('background-color','yellow')
+        })
+    })
+   $('h3').click(function (){
+       $('li').css('font-weight', 'bold');
+   })
+    $('li').click(function() {
+        // $('li').css('background-color', '#FF0');
+        $('li').parent().first().css('color', '#003cff');
+    });
 
 </script>
+
 
 </body>
 </html>
