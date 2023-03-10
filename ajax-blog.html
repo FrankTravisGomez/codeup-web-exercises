@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
         }
-        .toolTitle{
+        .blogTitle{
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -31,30 +31,25 @@
             font-family: 'Rampart One', cursive;
 
         }
-        .toolQuanity{
+        .blogContent{
             display: flex;
             flex-direction: column;
             font-family: 'Cormorant Garamond', serif;
             color: #1d621d;
         }
-        .toolCategories{
+        .blogCat{
             display: flex;
             flex-direction: column;
             font-family: 'Caveat', cursive;
             color: #653f3f;
         }
-        .toolPrice{
+        .blogDate{
             display: flex;
             flex-direction: column;
             font-family: 'Righteous', cursive;
             color: #9a57ea;
         }
-        .card-title{
-            color: #1b561b;
-        }
-        .placeholder{
-            color: darkorange;
-        }
+
 
 
     </style>
@@ -90,10 +85,10 @@
             var html = '';
             blog.forEach(function(object){
 
-                html += '<tr><td class="toolTitle ">' + object.title + "" + '</td>';
-                html += '<td class="toolQuanity">' + object.content + '</td>';
-                html += '<td class="toolCategories">' + object.categories + '</td>';
-                html += '<td class="toolPrice">' + object.date + '</td>';
+                html += '<tr><td class="blogTitle ">' + object.title + "" + '</td>';
+                html += '<td class="blogContent">' + object.content + '</td>';
+                html += '<td class="blogCat">' + object.categories + '</td>';
+                html += '<td class="blogDate">' + object.date + '</td>';
                 html += '</tr>';
                 console.log(object)
             })

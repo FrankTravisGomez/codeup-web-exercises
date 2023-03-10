@@ -49,10 +49,46 @@
                     html += '</tr>';
                     console.log(object)
             })
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         location.reload(true);
+        //     });
+        // });
         $("#insertProducts").append(html);
 
             // console.log(data)
     })
+    $.ajax("data/inventory.json").done(function(data){
+        console.log("words words words")
+        var html = '';
+    $(document).ready(function () {
+        $("button").click(function () {
+            //We want the data to get here without refreshing the page
+            $.ajax("data/inventory.json").done(function(data){
+                var html = '';
+                data.forEach(function(object){
+
+                    html += '<tr><td class="toolTitle ">' + object.title + "" + '</td>';
+                    html += '<td class="toolQuanity">' + object.quantity + '</td>';
+                    html += '<td class="toolCategories">' + object.price + '</td>';
+                    html += '<td class="toolPrice">' + object.categories + '</td>';
+                    html += '</tr>';
+                    console.log(object)
+                })
+                // $(document).ready(function () {
+                //     $("button").click(function () {
+                //         location.reload(true);
+                //     });
+                // });
+                $("#insertProducts").html(html);
+
+                // console.log(data)
+            })
+          //Below we are doing a reload which would technically bring the fresh contenet to the page
+          //   location.reload();
+        });
+        $("#insertProducts").append(html);
+    })});
 
 
 })();
