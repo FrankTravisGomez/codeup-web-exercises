@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e993df05-b2ec-4a14-8dea-35e71af55078" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/inventory.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/inventory.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapbox_maps_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/mapbox_maps_api.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -82,7 +81,7 @@
       <updated>1674233191209</updated>
       <workItem from="1674233193118" duration="12814000" />
       <workItem from="1674489914203" duration="579779000" />
-      <workItem from="1678305884524" duration="65428000" />
+      <workItem from="1678305884524" duration="67436000" />
     </task>
     <servers />
   </component>
