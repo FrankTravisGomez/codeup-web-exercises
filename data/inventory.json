@@ -32,10 +32,10 @@
         "price": 10
     }, {
         "title": "Power",
-        "quanity": 0,
+        "quantity": 0,
         "categories": [
-
         "GODLY"
-        ]
+        ],
+    "price": 10000000
 }
 ]
