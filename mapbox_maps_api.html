@@ -70,7 +70,7 @@
 
 
     // Array with foreach loop
-    const testArray= [{
+    let testArray= [{
         name: "raising cane's",
         location:[-98.49424040099139, 29.623531231587773],
         review: 'best chicken on this side of town',
@@ -85,23 +85,13 @@
     }
     ];
     testArray.forEach(place => {
-        const marker = new mapboxgl.Marker()
+        let marker = new mapboxgl.Marker()
         .setLngLat(place.location)
         .addTo(map);
-        const popup = new mapboxgl.Popup()
-        setHTML(`<p>${place.name} - ${place.review}</p>`)
+        let popup = new mapboxgl.Popup()
+        popup.setHTML(`<p>${place.name} - ${place.review}</p>`)
         marker.setPopup(popup);
     });
-
-    // var setLocal = [{
-    //     address: "19141 Stone Oak Pkwy #113, San Antonio, tx",
-    //     popupHTML: '<div><p>good pizza</p></div>'
-    // }];
-    // function goodPlaces(add, pop){
-    //     add.forEach(function(info){
-    //
-    //     })
-    // }
 
 
     // geocode("19141 Stone Oak Pkwy #113, San Antonio, TX 78258", myToken).then(function(results){
