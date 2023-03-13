@@ -32,55 +32,101 @@
 
     //javaScript object mapboxgl.Marker() setProperties()
     // marker 1 raising cane's 29.623531231587773, -98.49424040099139
-    let myMarker = new mapboxgl.Marker();
-    myMarker.setLngLat([-98.49424040099139, 29.623531231587773]);
-    myMarker.addTo(map);
-    // pop up for raising cane's
-    let myPopup1 = new mapboxgl.Popup();
-    myPopup1.setLngLat([-98.49424040099139, 29.623531231587773])
-    myPopup1.setHTML("<span>Raising cane's</span>")
-    myMarker.setPopup(myPopup1);
+    // let myMarker = new mapboxgl.Marker();
+    // myMarker.setLngLat([-98.49424040099139, 29.623531231587773]);
+    // myMarker.addTo(map);
+    // // pop up for raising cane's
+    // let myPopup1 = new mapboxgl.Popup();
+    // myPopup1.setLngLat([-98.49424040099139, 29.623531231587773])
+    // myPopup1.setHTML("<span>Raising cane's</span>")
+    // myMarker.setPopup(myPopup1);
 
 
     //trilogy pizza coords: 29.625709058328056, -98.49592925177035
 
     //marker 2 trilogy pizza
-    let myMarker2 = new mapboxgl.Marker();
-    myMarker2.setLngLat([-98.49592925177035, 29.625709058328056]);
-    myMarker2.addTo(map);
-    //pop up for trilogy pizza
-    let myPopup = new mapboxgl.Popup();
-    myPopup.setLngLat([-98.49592925177035, 29.625709058328056])
-    myPopup.setHTML("<span>Trilogy Pizza</span>")
-    myMarker2.setPopup(myPopup);
+    // let myMarker2 = new mapboxgl.Marker();
+    // myMarker2.setLngLat([-98.49592925177035, 29.625709058328056]);
+    // myMarker2.addTo(map);
+    // //pop up for trilogy pizza
+    // let myPopup = new mapboxgl.Popup();
+    // myPopup.setLngLat([-98.49592925177035, 29.625709058328056])
+    // myPopup.setHTML("<span>Trilogy Pizza</span>")
+    // myMarker2.setPopup(myPopup);
 
 
-    // not sure what im doing trying to follow the Mapbox Maps API reading material
-    geocode("San Antonio", myToken).then(function(results){
-        console.log("Geocode result");
-        console.log(results);
-    })
-    // trilogy pizza
-    reverseGeocode({lat: 29.625709058328056, lng: -98.49592925177035}, myToken).then(function(results){
-        console.log("Reverse Geocode results");
-        console.log(results);
-    })
+
+    //Boiler House at the Pearl 29.44209860378116, -98.48061313165401
+
+    //marker 3 Boiler House at the Pearl
+    // let myMarker3 = new mapboxgl.Marker();
+    // myMarker3.setLngLat([-98.48061313165401, 29.44209860378116]);
+    // myMarker3.addTo(map);
+    //
+    // let myPopup2 = new mapboxgl.Popup();
+    // myPopup2.setLngLat([-98.48061313165401, 29.44209860378116])
+    // myPopup2.setHTML("<span>Boiler House at the Pearl</span>")
+    // myMarker3.setPopup(myPopup2);
 
 
-    // restaurant in OR address 13000 SW century Dr, Bend, OR 97703, an attempt at the fly to mechanic
+    // Array with foreach loop
+    const testArray= [{
+        name: "raising cane's",
+        location:[-98.49424040099139, 29.623531231587773],
+        review: 'best chicken on this side of town',
+    },{
+        name: "trilogy pizza",
+        location: [-98.49592925177035, 29.625709058328056],
+        review:"almost like chicago but not as good",
+    },{
+        name: "Boiler House at the Pearl",
+        location: [-98.48061313165401, 29.44209860378116],
+        review: "fany place for them fancy people",
+    }
+    ];
+    testArray.forEach(place => {
+        const marker = new mapboxgl.Marker()
+        .setLngLat(place.location)
+        .addTo(map);
+        const popup = new mapboxgl.Popup()
+        setHTML(`<p>${place.name} - ${place.review}</p>`)
+        marker.setPopup(popup);
+    });
 
-    geocode("13000 SW century Dr, Bend, OR 97703", myToken).then(function(results){
-        console.log(results);
-        let myMarker3 = new mapboxgl.Marker();
-        myMarker3.setLngLat(results);
-        myMarker3.addTo(map);
+    // var setLocal = [{
+    //     address: "19141 Stone Oak Pkwy #113, San Antonio, tx",
+    //     popupHTML: '<div><p>good pizza</p></div>'
+    // }];
+    // function goodPlaces(add, pop){
+    //     add.forEach(function(info){
+    //
+    //     })
+    // }
 
-        let object = {center: results, zoom: 15};
 
-        map.flyTo(object);
+    // geocode("19141 Stone Oak Pkwy #113, San Antonio, TX 78258", myToken).then(function(results){
+    //     console.log("Geocode result");
+    //     console.log(results);
+    // })
+    // trilogy pizza in reverse
+    // reverseGeocode({lat: 29.625709058328056, lng: -98.49592925177035}, myToken).then(function(results){
+    //     console.log("Reverse Geocode results");
+    //     console.log(results);
+    // })
 
-        console.log(object);
-    })
+    // geocode("312 Pearl Pkwy Building 3, San Antonio, TX 78215", myToken).then(function(results){
+    //     console.log("Geocode result");
+    //     console.log(results);
+    // })
+
+    // let food = "";
+    // const rest = [-98.48061313165401, 29.44209860378116];
+    // rest.forEach(newFunction);
+    //
+    // document.getElementById("map").innerHTML = text;
+    // function newFunction(place){
+    //     text += place
+    // }
 
 </script>
 </body>
