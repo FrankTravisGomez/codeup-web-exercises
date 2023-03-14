@@ -2,59 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather Map</title>
-
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
 </head>
 <body>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
 
+<input type="text" placeholder="Search for weather" id="searchInput"> <button id="btn1">Click here to search</button>
 
+<div id="weatherBody">
 
-<div id='map' style='width: 500px; height: 400px;'></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script>
-    let myToken = 'pk.eyJ1IjoidHJhdmlzY29kZXVwIiwiYSI6ImNsZjJzdm5pNDBsaGgzcmxoYWNueHlkcnQifQ.0xOFa6MG7IZFECJVLYQOZQ';
-
-    mapboxgl.accessToken = myToken;
-
-    //javascript map cords 29.626185451652596, -98.4949673897373
-    const map = new mapboxgl.Map(
-        {
-            container: 'map', // container ID
-            style: 'mapbox://styles/mapbox/outdoors-v12', //  URL to make it look cool
-            center: [-98.4949673897373, 29.626185451652596], // positioning lng, lat goes inside []
-            zoom: 15,
-        }
-    );
 
 
-    //javaScript object mapboxgl.Marker() setProperties()
-    // marker 1 raising cane's 29.623531231587773, -98.49424040099139
-    let myMarker = new mapboxgl.Marker();
-    myMarker.setLngLat([-98.49424040099139, 29.623531231587773]);
-    myMarker.addTo(map);
-    // pop up for raising cane's
-    let myPopup1 = new mapboxgl.Popup();
-    myPopup1.setLngLat([-98.49424040099139, 29.623531231587773])
-    myPopup1.setHTML("<span>Raising cane's</span>")
-    myMarker.setPopup(myPopup1);
+    //29.622157157950287, -98.50589962996946
+    // console.log("more info");
+    // console.log(`https://api.openweathermap.org/data/2.5/weather?lat=${29.622157157950287}&lon=${-98.50589962996946}&appid=${openWeatherKey}`);
+    //
+    //
+    // console.log(`https://api.openweathermap.org/data/2.5/weather?lat=${29.622157157950287}&lon=${-98.50589962996946}&appid=${openWeatherKey}&units=imperial`);
+
+    //stuff on screen
+
+    console.log("is it working");
+
+    $.ajax(`api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`)
+    function geoCodeBuildWeather(searchString) {
+        let html = "";
+        geocode(searchString, mapboxKey).then(function (results) {
+
+            //my home cord: 29.623148749882247, -98.50846661345147
+    $.get(`https://api.openweathermap.org/data/2.5/weather?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function(data){
+        console.log(data);
+
+        html+= `<h4>aktuelle Standort: ${data.name}</h4>`;
+
+        html += `<h4>aktuelle Wetter: ${data.weather[0].description}</h4>`;
 
 
-    //trilogy pizza coords: 29.625709058328056, -98.49592925177035
+        html += `<h5>aktuelle durchschnittliche Windgeschwindigkeit: ${parseInt(data.wind.speed)} knots</h5>`;
 
-    //marker 2 trilogy pizza
-    let myMarker2 = new mapboxgl.Marker();
-    myMarker2.setLngLat([-98.49592925177035, 29.625709058328056]);
-    myMarker2.addTo(map);
-    //pop up for trilogy pizza
-    let myPopup = new mapboxgl.Popup();
-    myPopup.setLngLat([-98.49592925177035, 29.625709058328056])
-    myPopup.setHTML("<span>Trilogy Pizza</span>")
-    myMarker2.setPopup(myPopup);
+        html += `<h5>aktuelle Temperatur: ${parseInt(data.main.temp)} &deg;</h5>`;
+
+
+        html += `<h5>aktuelle  Luftfeuchtigkeit: ${parseInt(data.main.humidity)}</h5>`;
+
+        $("#weatherBody").html(html);
+
+
+    })})}
+
+    $("#btn1").click(function(e){
+        e.preventDefault();
+        geoCodeBuildWeather($("#searchInput").val());
+    })
+
 
 </script>
-</body>
 </html>
