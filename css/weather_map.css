@@ -3,3 +3,19 @@
 body{
     background-image: url("../img2links/pexels-pixabay-220201.jpg");
 }
+
+.card{
+    display: flex;
+    align-items: flex-end;
+
+    background-color: #CAE1FF;
+}
+
+#color{
+    background-image: url("../img2links/pexels-pixabay-220201.jpg");
+}
+#map{
+    display: flex;
+    justify-content: center;
+    margin-left: 260px;
+}
