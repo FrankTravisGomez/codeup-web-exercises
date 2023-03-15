@@ -13,9 +13,17 @@ body{
 
 #color{
     background-image: url("../img2links/pexels-pixabay-220201.jpg");
+    display: flex;
+    justify-content: center;
 }
 #map{
     display: flex;
     justify-content: center;
     margin-left: 260px;
 }
+h1{
+    display: flex;
+    justify-content: center;
+    color: #CAE1FF;
+}
+

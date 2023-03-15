@@ -45,29 +45,29 @@ console.log(results)
             var html4pt2="";
 
                     html4pt2 += `<h4>Current location: ${data.city.name}</h4>`
-                    html4pt2 += `<h4>Date: ${data.list[9].dt_txt}</h4>`
-                    html4pt2 += `<h4>Future weather: ${data.list[9].weather[0].description}</h4>`
-                    html4pt2 += `<h5>Future average wind speed: ${parseInt(data.list[9].wind.speed)} knots</h5>`
-                    html4pt2 += `<h5>Future Temperature:${parseInt(data.list[9].main.temp)} &deg;</h5>`
-                    html4pt2 += `<h5>Future humidity:${parseInt(data.list[9].main.humidity)}</h5>`
+                    html4pt2 += `<h4>Date: ${data.list[10].dt_txt}</h4>`
+                    html4pt2 += `<h4>Future weather: ${data.list[10].weather[0].description}</h4>`
+                    html4pt2 += `<h5>Future average wind speed: ${parseInt(data.list[10].wind.speed)} knots</h5>`
+                    html4pt2 += `<h5>Future Temperature:${parseInt(data.list[10].main.temp)} &deg;</h5>`
+                    html4pt2 += `<h5>Future humidity:${parseInt(data.list[10].main.humidity)}</h5>`
                     $("#day3").html(html4pt2);
             var html4pt3="";
 
                     html4pt3 += `<h4>Current location: ${data.city.name}</h4>`
-                    html4pt3 += `<h4>Date: ${data.list[17].dt_txt}</h4>`
-                    html4pt3 += `<h4>Future weather: ${data.list[17].weather[0].description}</h4>`
+                    html4pt3 += `<h4>Date: ${data.list[18].dt_txt}</h4>`
+                    html4pt3 += `<h4>Future weather: ${data.list[18].weather[0].description}</h4>`
                     html4pt3 += `<h5>Future average wind speed: ${parseInt(data.list[17].wind.speed)} knots</h5>`
-                    html4pt3 += `<h5>Future Temperature: ${parseInt(data.list[17].main.temp)} &deg;</h5>`
-                    html4pt3 += `<h5>Future humidity: ${parseInt(data.list[17].main.humidity)}</h5>`
+                    html4pt3 += `<h5>Future Temperature: ${parseInt(data.list[18].main.temp)} &deg;</h5>`
+                    html4pt3 += `<h5>Future humidity: ${parseInt(data.list[18].main.humidity)}</h5>`
                     $("#day4").html(html4pt3);
             var html4pt4="";
 
                     html4pt4 += `<h4>Current location: ${data.city.name}</h4>`
-                    html4pt4 += `<h4>Date: ${data.list[25].dt_txt}</h4>`
-                    html4pt4 += `<h4>Future weather: ${data.list[25].weather[0].description}</h4>`
-                    html4pt4 += `<h5>Future average wind speed: ${parseInt(data.list[25].wind.speed)} knots</h5>`
-                    html4pt4 += `<h5>Future Temperature: ${parseInt(data.list[25].main.temp)} &deg;</h5>`
-                    html4pt4 += `<h5>Future humidity: ${parseInt(data.list[25].main.humidity)}</h5>`
+                    html4pt4 += `<h4>Date: ${data.list[26].dt_txt}</h4>`
+                    html4pt4 += `<h4>Future weather: ${data.list[26].weather[0].description}</h4>`
+                    html4pt4 += `<h5>Future average wind speed: ${parseInt(data.list[26].wind.speed)} knots</h5>`
+                    html4pt4 += `<h5>Future Temperature: ${parseInt(data.list[26].main.temp)} &deg;</h5>`
+                    html4pt4 += `<h5>Future humidity: ${parseInt(data.list[26].main.humidity)}</h5>`
                     $("#day5").html(html4pt4);
             })
             }
@@ -99,25 +99,42 @@ const map = new mapboxgl.Map(
         zoom: 10,
     }
 );
-let testArray= [{
-    name: "raising cane's",
-    location:[1, 0],
-    review: 'best chicken on this side of town',
-},{
-    name: "trilogy pizza",
-    location: [1, 0],
-    review:"almost like chicago but not as good",
-},{
-    name: "Boiler House at the Pearl",
-    location: [1, 0],
-    review: "fany place for them fancy people",
+map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true,
+    showUserHeading: true
+}));
+// Create a new marker.
+const marker = new mapboxgl.Marker({
+    draggable:true,
+})
+    .setLngLat([-98.4949673897373, 29.626185451652596])
+    .addTo(map);
+
+// function onDragEnd() {
+//     let lngLat = marker.getLngLat()
+//     let arrWeather=
+//     coordinates.style.display = 'block';
+//     coordinates.innerHTML = `Longitude: ${0}<br />Latitude: ${1}`;
+// }
+//
+// marker.on('dragend', onDragEnd);
+
+let dateConversion = function(timeStamp) {
+    let date = new Date(timeStamp * 1000).toLocaleString("en-US", {
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+    });
+    return date;
 }
-];
-testArray.forEach(place => {
-    let marker = new mapboxgl.Marker()
-        .setLngLat(place.location)
-        .addTo(map);
-    let popup = new mapboxgl.Popup()
-    popup.setHTML(`<p>${place.name} - ${place.review}</p>`)
-    marker.setPopup(popup);
-});
+function onDragEnd() {
+    let lngLat = marker.getLngLat();
+    let arrWeather = [lngLat.lng, lngLat.lat];
+    console.log(lngLat);
+    geoCodeBuildWeather(arrWeather)
+    geoCodeBuildWeather(arrWeather)
+}
+marker.on(`dragend`, onDragEnd);
