@@ -13,6 +13,15 @@ console.log(results)
         //my home cord: 29.623148749882247, -98.50846661345147
         $.get(`https://api.openweathermap.org/data/2.5/weather?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
                 console.log(data);
+                // map marker update below
+                map.flyTo({
+                    center: results,
+                    zoom: 10
+                })
+                marker.setLngLat(results)
+
+
+
 
                 //the following code is tailored to the object that comes back from the /weather
                 html += `<h4>Current location: ${data.name}</h4>`;
@@ -112,15 +121,6 @@ const marker = new mapboxgl.Marker({
 })
     .setLngLat([-98.4949673897373, 29.626185451652596])
     .addTo(map);
-
-// function onDragEnd() {
-//     let lngLat = marker.getLngLat()
-//     let arrWeather=
-//     coordinates.style.display = 'block';
-//     coordinates.innerHTML = `Longitude: ${0}<br />Latitude: ${1}`;
-// }
-//
-// marker.on('dragend', onDragEnd);
 
 let dateConversion = function(timeStamp) {
     let date = new Date(timeStamp * 1000).toLocaleString("en-US", {
