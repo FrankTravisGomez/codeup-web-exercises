@@ -5,9 +5,6 @@ body{
 }
 
 .card{
-    display: flex;
-    align-items: flex-end;
-
     background-color: #CAE1FF;
 }
 
