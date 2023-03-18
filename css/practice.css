@@ -1,0 +1,115 @@
+*{
+    background-color: #030923;
+}
+
+.btn{
+    background-color: #d30e0e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 20px;
+    padding: 10px 16px 10px 16px;
+    transition: opacity 1s;
+    vertical-align: bottom;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn:active{
+    opacity: 0.5;
+}
+
+.login{
+    background-color: white;
+    border: solid 2px #0cdcf3;
+    color: #0cdcf3;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+    vertical-align: bottom;
+}
+
+.login:hover{
+    background-color: #0cdcf3;
+    color:white;
+
+}
+
+.login:active{
+    opacity: 0.8;
+}
+
+.login:active{
+    background-color: white;
+    border: solid 2px #0cdcf3;
+    color: #0cdcf3;
+}
+
+.tweet{
+    background-color: #0caef3;
+    color: white;
+    border: none;
+    padding: 10px 16px 10px 16px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 1s, color 1s;
+    vertical-align: bottom;
+}
+
+.tweet:hover{
+    background-color: white;
+    color: #0caef3;
+    border: 2px #0caef3;
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.tweet:active{
+    opacity: 0.8;
+}
+
+.tweet:active{
+    background-color: #0caef3;
+    color: white;
+    border: none;
+}
+
+.firstPara{
+    color: #b6b0b0;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.dot{
+    color: #d7d1d1;
+
+    text-align: center;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.good{
+
+    font-size: 14px;
+    color: #d7d1d1;
+    text-align: center;
+    width: 300px;
+    margin-top: 0;
+}
+
+p{
+    font-family: AppleGothic;
+}
