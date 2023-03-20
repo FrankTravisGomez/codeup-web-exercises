@@ -113,3 +113,28 @@
 p{
     font-family: AppleGothic;
 }
+
+div{
+    color: #d7d1d1;
+}
+
+#btn{
+    background-color: #027c11;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 10px;
+    padding: 10px 16px 10px 16px;
+    transition: opacity 1s;
+    vertical-align: bottom;
+}
+
+#btn:hover{
+    opacity: 0.8;
+}
+
+#btn:active{
+    opacity: 0.5;
+}

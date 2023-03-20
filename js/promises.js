@@ -14,13 +14,13 @@ console.log("is it working")
 //        console.log(data)
 //     })
 
-
+//the code underneath is for a fetch request from my github to pull my commit info
 fetch(`https://api.github.com/users/FrankTravisGomez/events/public`, {Authorization: githubKey}).then( res => res.json())
     .then(function(data){
-        
+
         console.log(data)
     })
-
+// function wait and a return for a promise to resolve and reject using Math.random with a timer set to 3000
 function wait() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
