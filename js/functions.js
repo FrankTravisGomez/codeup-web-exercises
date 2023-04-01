@@ -21,6 +21,7 @@
 function sayHello(name) {
     return "Hello " + name;
 }
+console.log(sayHello)
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -42,8 +43,8 @@ console.log(helloMessage);
  * console.
  */
 var myName='Travis';
-sayHello(myName);
-console.log(myName);
+
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -70,6 +71,7 @@ var random = Math.floor((Math.random() * 3) + 1);
      return number === 2;
 }
 console.log(isTwo(random));
+ console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -81,8 +83,8 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(tipDecimal, totalBill){
-    return tipDecimal * totalBill;
+function calculateTip(tipPercentage, totalBill){
+    return tipPercentage * totalBill;
 }
 /**
  * TODO:
@@ -90,9 +92,15 @@ function calculateTip(tipDecimal, totalBill){
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var billTotal = prompt("how much is your bill?");
-var tipPercent = prompt("how much to tip")
-alert("thank you for the money" + calculateTip(tipPercent + billTotal));
+// var billTotal = prompt("how much is your bill?");
+// var tipPercent = prompt("how much to tip")
+// alert("thank you for the money" + calculateTip(tipPercent + billTotal));
+
+var tipPercentage = prompt("What is the total bill? ");
+var billAmount = prompt("how much to tip? ");
+
+alert("how much for tip?" + calculateTip(tipPercentage, billAmount) + " thanks for the money!");
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -107,11 +115,22 @@ alert("thank you for the money" + calculateTip(tipPercent + billTotal));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(totalPrice, discountPrice){
-    var mathBucket = totalPrice(totalPrice * discountPrice)
-    var applyDiscount = 100;
-    var discountPercent = .2;
-    applyDiscount(applyDiscount, discountPercent)
-    return totalPrice
+// function applyDiscount(totalPrice, discountPrice){
+//     var mathBucket = totalPrice(totalPrice * discountPrice)
+//     var applyDiscount = 100;
+//     var discountPercent = .2;
+//     applyDiscount(applyDiscount, discountPercent)
+//     return totalPrice
+// }
+
+
+function applyDiscount(originalPrice, discountPercentage) {
+    var discountAmount = originalPrice * discountPercentage;
+    var discountedPrice = originalPrice - discountAmount;
+    return discountedPrice;
 }
+
+// Example usage:
+console.log(applyDiscount(100, 0.2)); // Output: 80
+console.log(applyDiscount(45.99, 0.12));
 

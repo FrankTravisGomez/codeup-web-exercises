@@ -21,7 +21,7 @@ fetch(`https://api.github.com/users/FrankTravisGomez/events/public`, {Authorizat
 
         console.log(data)
     })
-// 3)Create a function that accepts a GitHub username,
+// 3)Create a function that accepts a GitHub username,COMPLETE
 // and returns a promise that resolves returning just the date of the last commit that user made.
 // Reference the git-hub api documentation to achieve this.
 // function gitLast(user){
@@ -45,7 +45,7 @@ fetch(`https://api.github.com/users/FrankTravisGomez/events/public`, {Authorizat
 // and returns a promise that resolves after the passed number of milliseconds. COMPLETE
 // As a bonus make sure the promise resolves with the milliseconds in return,
 // so you can make the console log message more dynamic. COMPLETE
-// function wait and a return for a promise to resolve and reject using Math.random with a timer set to 3000
+// function wait and a return for a promise to resolve and reject using Math.random with a timer set to 3000 COMPLETE
 function wait() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

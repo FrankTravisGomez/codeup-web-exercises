@@ -47,6 +47,8 @@ td, th {
 .face {
     height: 300px;
     border-radius: 100%;
+    display: block;
+    margin: auto;
 }
 
 #carouselExampleAutoplaying {
@@ -76,4 +78,15 @@ button {
     /*opacity: .5;*/
 }
 
+#h1{
+    margin-left: 500px;
+}
+.container {
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
 

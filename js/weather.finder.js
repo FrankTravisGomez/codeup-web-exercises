@@ -82,10 +82,7 @@ console.log(results)
     })
 }
 // below is a request for the
-$("#btn1").click(function(e){
-    e.preventDefault();
-    geoCodeBuildWeather($("#searchInput").val());
-})
+
 
 mapboxgl.accessToken = mapboxKey;
 
