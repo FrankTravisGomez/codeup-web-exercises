@@ -151,8 +151,23 @@ function calculateTotal(luckyNumber, totalAmount){
  */
 //Generate a random number between 0 and 6
  var luckyNumber = Math.floor(Math.random() * 6);
-var totalBill = prompt("what is your total?");
-alert("news number" + luckyNumber + " is your total" + calculateTotal(luckyNumber,totalBill ) + "today");
+var totalBill = parseFloat(prompt("what is your total?"));
+var discount = calculateTotal(luckyNumber,totalBill );
+
+if (luckyNumber == 0) {
+    alert("not so lucky " + luckyNumber + " todays total is" + totalBill);
+} else if (luckyNumber == 1) {
+    alert("you won " + luckyNumber + " todays discount" + totalBill + " todays total is" + discount.toFixed(2));
+} else if (luckyNumber == 2) {
+    alert("you won " + luckyNumber + " todays discount" + totalBill + " todays total is" + discount.toFixed(2));
+} else if (luckyNumber == 3) {
+    alert("you won " + luckyNumber + " todays discount" + totalBill + " todays total is" + discount.toFixed(2));
+} else if (luckyNumber == 4) {
+    alert("you won " + luckyNumber + " todays discount" + totalBill + " todays total is" + discount.toFixed(2));
+} else if (luckyNumber == 5) {
+    alert("you won " + luckyNumber + " todays discount" + totalBill + " todays total is" + discount.toFixed(2));
+}
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -171,15 +186,46 @@ alert("news number" + luckyNumber + " is your total" + calculateTotal(luckyNumbe
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-var wantToGiveNumber = confirm ("would you like to give a number?");
+// var wantToGiveNumber = confirm ("would you like to give a number?");
+// if (wantToGiveNumber) {
+//     alert("yay")
+//     var userNumber = calculateTotal("what number?");
+//     if (typeof (userNumber)) ;
+//     alert("isNan")
+// }else{
+//     alert("okay give me a number:" + userNumber);
+//     var isEven = userNumber %2 ===0;
+//     var addOneHundred= userNumber+ 100;
+//     var isPositive= userNumber =0;
+// };
+
+
+var wantToGiveNumber = confirm("enter a number?");
+
 if (wantToGiveNumber) {
+
     alert("yay")
-    var userNumber = calculateTotal("what number?");
-    if (typeof (userNumber)) ;
-    alert("isNan")
-}else{
-    alert("okay give me a number:" + userNumber);
-    var isEven = userNumber %2 ===0;
-    var addOneHundred= userNumber+ 100;
-    var isPositive= userNumber =0;
-};
+    var userNumber = parseInt(prompt("Whats your number?"));
+        if (isNaN(userNumber)) {
+            alert("Thats not a number?")
+        } else {
+            var addOneHundred = userNumber + 100;
+            var isPositive = userNumber > 0;
+            var isEven = userNumber % 2;
+            if (isEven == 0) {
+                alert("Your number is even");
+            } else {
+                alert("Your number is odd");
+            }
+
+            alert("what is you number plus 100 " + addOneHundred + ".");
+
+            if (isPositive) {
+                alert("your number is positive");
+            } else {
+                alert("you have a negative number");
+            }
+        }
+} else {
+    alert("No numbers today");
+}
