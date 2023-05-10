@@ -1,47 +1,24 @@
 * {
-    background: sandybrown;
+    background: #F5F5F5;
 }
 
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-
-.coff {
-    padding-left: 4px;
-    background-color: white;
-    /*opacity: 0.75;*/
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-
-.coffeeBeans {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    object-fit: cover;
+.gray-background {
+    background-color: #F5F5F5;
 }
 
 .cover {
     height: 100vh;
     width: 100%;
     display: flex;
-    /*border: 3px solid #f4e0cb;*/
-    /*margin: 50px;*/
 }
 
 .flex-form {
     z-index: 10;
-    position: center;
-    margin: auto;
-    display: block;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .face {
@@ -49,44 +26,71 @@ td, th {
     border-radius: 100%;
     display: block;
     margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-#carouselExampleAutoplaying {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    bottom: 50px;
+h1 {
+    color: #0F4C81;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: #fff8d8;
-    /*opacity: 0.75;*/
+#h1 {
+    text-align: center;
+
 }
 
-.form-select,.input-group {
-    /*opacity: 0.75;*/
+#nameHeader {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-button {
-    /*color: #f4e0cb;*/
-}
-
-.templateBorder {
-    padding: 8px;
-    border: 15px solid #f4e0cb;
-    border-radius: 8px;
-    /*opacity: .5;*/
-}
-
-#h1{
-    margin-left: 500px;
-}
 .container {
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     z-index: -1;
 }
 
+#about-me{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    color: #0F4C81;
+}
+#about{
+    margin-bottom: 30px;
+}
+
+#nav{
+    margin-bottom: 70px;
+}
+
+#projects {
+    text-align: center;
+}
+
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#projects li {
+    flex: 1 1 350px;
+    margin: 20px;
+}
+
+#projects img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#projects h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e993df05-b2ec-4a14-8dea-35e71af55078" name="Changes" comment="" />
+    <list default="true" id="e993df05-b2ec-4a14-8dea-35e71af55078" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/test-site.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/test-site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-site.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-site.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +18,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -39,6 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lauratorres/IdeaProjects/codeup-web-exercises&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -80,7 +85,9 @@
       <workItem from="1674233193118" duration="12814000" />
       <workItem from="1674489914203" duration="579779000" />
       <workItem from="1678305884524" duration="111481000" />
-      <workItem from="1678820498123" duration="166918000" />
+      <workItem from="1678820498123" duration="168329000" />
+      <workItem from="1680806085457" duration="9004000" />
+      <workItem from="1683038643544" duration="14003000" />
     </task>
     <servers />
   </component>
