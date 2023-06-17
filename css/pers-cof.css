@@ -72,22 +72,35 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-@media (max-width: 769px)and(min-width: 320px) {
-    .background-video {
-        display: none;
-    }
-    .background-image {
-        display: block;
-    .background-image
-        background-image: url('img2links/pexels-tyler-nix-2396220.jpg');
-        background-size: cover;
-        background-position: center;
+/*@media (max-width: 769px)and(min-width: 320px) {*/
 
-    }
-}
+/*    .background-image {*/
+/*        display: block;*/
+/*    .background-image*/
+/*        background-image: url('img2links/pexels-tyler-nix-2396220.jpg');*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+
+/*    }*/
+/*}*/
 
 @media screen and (max-width: 1200px) and (min-width: 769px) {
     .coffeeBeans {
         display: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .mobilelpic {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
     }
 }
