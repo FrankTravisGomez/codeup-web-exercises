@@ -137,3 +137,44 @@ langLink.addEventListener('click', event => {
         behavior: 'smooth'
     });
 });
+
+const texts = ["Welcome to my portfolio!", "I am a web developer.", "Feel free to explore my projects."];
+const typingSpeed = 100;
+const waitingTime = 5000;
+let index = 0;
+let isDeleting = false;
+let textIndex = 0;
+
+function typeWriter() {
+    const typingText = document.getElementById("typing-text");
+    const currentText = texts[textIndex];
+    if (isDeleting) {
+        typingText.textContent = currentText.substring(0, index - 1);
+        index--;
+    } else {
+        typingText.textContent = currentText.substring(0, index + 1);
+        index++;
+    }
+
+    if (!isDeleting && index === currentText.length) {
+        isDeleting = true;
+        setTimeout(() => {
+            isDeleting = false;
+            textIndex++;
+            if (textIndex === texts.length) {
+                textIndex = 0;
+            }
+        }, waitingTime);
+    } else if (isDeleting && index === 0) {
+        isDeleting = false;
+        textIndex++;
+        if (textIndex === texts.length) {
+            textIndex = 0;
+        }
+    }
+
+    const typingSpeedDelay = isDeleting ? typingSpeed / 2 : typingSpeed;
+    setTimeout(typeWriter, typingSpeedDelay);
+}
+
+typeWriter();
