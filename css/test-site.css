@@ -298,3 +298,22 @@ h1 {
 .company-info p {
     margin-bottom: 5px;
 }
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
