@@ -38,15 +38,12 @@
 
 h1 {
     color: #0F4C81;
-}
-
-#h1 {
     text-align: center;
 }
 
 #nameHeader {
-    text-align: center;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .container {
@@ -118,6 +115,7 @@ h1 {
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-item img {
@@ -194,73 +192,6 @@ h1 {
     border-radius: 5px;
 }
 
-#languages {
-    text-align: center;
-}
-
-#languages ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-#languages li {
-    background-color: #F5F5F5;
-    color: #0F4C81;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#languages li i {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    font-size: 2em;
-}
-
-#languages li span {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-#languages li:not(:hover) i {
-    opacity: 1;
-}
-
-#languages li:not(:hover) span {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#languages li:hover {
-    background-color: #0F4C81;
-    color: #FFFFFF;
-}
-
-#languages li:hover i {
-    opacity: 0.2;
-    text-shadow: 0px 0px 10px #00FFFF, 0px 0px 20px #00FFFF, 0px 0px 30px #00FFFF;
-}
-
-#languages li:hover span {
-    opacity: 1;
-    visibility: visible;
-    color: #0F4C81;
-}
 .experience-container {
     display: flex;
     flex-wrap: wrap;
@@ -330,6 +261,7 @@ h1 {
 .card-image:hover {
     transform: scale(1.1);
 }
+
 #contact {
     background-color: #f5f5f5;
     padding: 20px;
@@ -366,4 +298,20 @@ h1 {
 
 #contact i {
     margin-right: 5px;
+}
+
+
+#languages li {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 0.8em;
+    line-height: 1;
+    width: 120px;
+    height: 120px;
+}
+
+
+#languages li:hover {
+    transform: scale(1.1);
+    font-size: 0.9em;
 }
