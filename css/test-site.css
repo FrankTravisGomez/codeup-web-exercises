@@ -456,3 +456,15 @@ h1 {
     height: 100%;
     object-fit: cover; /* Ensure the SVG fills the entire space */
 }
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
