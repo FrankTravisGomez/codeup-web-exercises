@@ -180,3 +180,19 @@ function typeWriter() {
 typeWriter();
 
 
+window.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    showSlide(0); // Show the first slide initially
+
+    setInterval(function () {
+        showSlide(currentSlide + 1); // Show the next slide
+    }, 3000); // Change slide every 3 seconds
+});
